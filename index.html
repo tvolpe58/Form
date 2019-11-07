@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <title>Form Demo</title>
+    <style>
+    form {
+        background-color: aliceblue;
+    }
+
+    legend {
+        background-color: white;
+        color: seagreen;
+        border: 1px solid #808080;
+    }
+
+    input, textarea, select, button {
+        width: 150px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    button {
+  padding      : 5px;
+  font         : bold .6em sans-serif;
+  border       : 2px solid #333;
+  border-radius: 5px;
+  background   : none;
+  cursor       : pointer;
+}
+
+
+        </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Please feel free to send a message</legend>
+
+            <p>
+                Email:<br>
+                <input type="text" email="email"><br>
+            </p>
+            <p>
+                <label>Message:<br>
+                    <textarea name="message"></textarea></label><br>
+            </p>
+            <fieldset>
+
+                <legend>Would you like a reply?</legend>
+                <input type="radio" name="reply" value="yes" checked> Yes<br>
+                <input type="radio" name="reply" value="no"> No<br>
+            </fieldset>
+            <p>
+                    <button type="submit">Send Message</button>
+                </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
